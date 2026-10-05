@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en-PH">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Happy Teachers' Day! 🌼 | Para sa Aming Puno ng Saging</title>
+<link rel="stylesheet" href="styles.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<div id="petals"></div>
+
+<header class="nav">
+  <div class="logo">🌼 <span>Guro Ko, Idol Ko</span></div>
+  <nav>
+    <a href="#tribute">Tribute</a>
+    <a href="#teacher">Our Teacher</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#flowers">Flowers</a>
+    <a href="#wall">Message Wall</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-flowers">🌻 🌼 🌸 🌼 🌻</div>
+  <p class="eyebrow">Philippines • National Teachers' Month • Oct 5</p>
+  <h1>Happy Teachers' Day, <span class="highlight">Ma'am Preng🍌🍌🍌🍌🍌🍌🍌</span></h1>
+  <p class="subtitle">Professional na pagbati, na may halong lambing at konting asar —<br/>gaya ng pagmamahal namin sa inyo.</p>
+  <div class="hero-buttons">
+    <button onclick="scrollToId('flowers')">Magbigay kayo ng flower</button>
+    <button class="ghost" onclick="scrollToId('teacher')">💛 Meet Our Teacher</button>
+  </div>
+  <div class="hero-card">
+    <p><em>"When the tree is a banana tree, There will always be someone to put a hole in it. (Si carl to)"</em></p>
+    <small>— From Matt</small>
+  </div>
+</section>
+
+<section id="tribute" class="section card-section">
+  <h2>🌼 A Professional Thank You <span class="tagalog">(na may konting bola)</span></h2>
+  <div class="two-col">
+    <div>
+      <p>Dear Teacher,</p>
+      <p>Sa dinami-dami ng nagturo sa amin ng <strong>Math, Homeroom, At hindi ko na alam ang iba dahil alam ko dalawa lang ang subject natin</strong>, kayo po ang tumatak — hindi lang dahil sa lessons, kundi dahil sa pasensya.</p>
+      <p>Thank you for:</p>
+      <ul class="checklist">
+        <li>1. Making difficult lessons feel <em>kayang-kaya</em></li>
+        <li>2. Believing in us kahit kami mismo, sumusuko na</li>
+        <li>3. Teaching us <em>respeto, sipag, at tiyaga</em> — true Filipino values (ai lang tong quotes na to)</li>
+        <li>4. Not giving up kahit maingay kami sobra (kagaya ng mga girls)</li>
+      </ul>
+      <p class="mabuhay">mabuhay mam preng, mabuhay mam preng, happy teachers day mam preng, mabuhay mam preng</p>
+    </div>
+    <div class="flower-frame">
+      <div class="big-flower">🍌</div>
+      <p class="caption">Saging<br/>Masarap eh no? Kumain ng MALAKI na saging.</p>
+      <div class="mini-flowers">🌼 🌼 🌼 🌼 🌼</div>
+    </div>
+  </div>
+</section>
+
+<section id="teacher" class="section teacher-section">
+  <h2>💛 Meet Our Teacher — Ma'am Preng</h2>
+  <p class="center-sub">Our professional, inspiring, at paboritong guro ng <strong>8-Copernicus</strong>. mabait, mabait, at mabait.</p>
+  <div class="gallery teacher-gallery">
+    <figure>
+      <img src="gangstapreng.jpg" alt="Teacher photo 1" />
+      <figcaption><strong>Photo 1:</strong> Si ma'am preng <code>(mabait na teacher)</code></figcaption>
+    </figure>
+    <figure>
+      <img src="preng.jpg" alt="Teacher photo 2" />
+      <figcaption><strong>Photo 2:</strong> ma'am preng no 2<code> (mabait parin)</code>.</figcaption>
+    </figure>
+    <figure>
+      <img src="wow.jpg" alt="Teacher photo 3" />
+      <figcaption><strong>Photo 3:</strong> kasama ung copernicus<code> (wow. wala kami dyan.)</code>.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section id="gallery" class="section">
+  <h2>🌿 Puno ng Saging Gallery</h2>
+  <p class="center-sub">The honor of our beloved puno ng saging....</p>
+  <div class="gallery">
+    <figure>
+      <img src="images/puno-ng-saging-1.jpg" alt="Puno ng saging - matatag at matangkad" />
+      <figcaption><strong>Exhibit A:</strong> matatag - kahit walang dilig, buhay pa rin. tulad niyo tuwing Monday morning.</figcaption>
+    </figure>
+    <figure>
+      <img src="images/puno-ng-saging-2.jpg" alt="Puno ng saging - maraming dahon" />
+      <figcaption><strong>Exhibit B:</strong> ang mapagbigay - maraming dahon, maraming bunga. parang kayo, maraming handouts.</figcaption>
+    </figure>
+    <figure>
+      <img src="images/puno-ng-saging-3.jpg" alt="Puno ng saging na may bunga" />
+      <figcaption><strong>Exhibit C:</strong> ang may bunga - may saging na! results ng pagtuturo niyo: kami, unti-unting nagmamature. (mature ba talaga)</figcaption>
+    </figure>
+  </div>
+  <p class="disclaimer">* All saging photos: real banana trees. No teachers were harmed in the making of this joke. Labyu baby.</p>
+</section>
+
+<section id="flowers" class="section flower-interactive">
+  <h2>Magbigayan ng bulaklak para kay mam preng</h2>
+  <p class="center-sub">Click to give flowers.</p>
+  <div class="flower-counter-box">
+    <div id="flowerDisplay" class="flower-display">🌼</div>
+    <h3><span id="flowerCount">1</span> flowers given!</h3>
+    <button id="giveBtn">🌻 Give Another Flower</button>
+    <button id="sagingBtn" class="ghost">🍌 ...o kaya saging nalang.</button>
+    <p id="jokeLine" class="joke-line"></p>
+  </div>
+</section>
+
+<section id="wall" class="section">
+  <h2>💌 Message Wall — Bati Mula sa Klase</h2>
+  <p class="center-sub">Professional, sweet, o nang-aasar — basta galing sa puso. Write one below!</p>
+  <p id="wallStatus" class="center-sub" style="font-size:.9rem">🌼 loading shared wall…</p>
+  <div class="wall-form">
+    <input id="nameInput" placeholder="Your name (e.g. Juan from Row 3, makulit)" maxlength="40" />
+    <textarea id="msgInput" placeholder="E.g. Thank you Ma'am sa pag-intindi kahit late ako... ulit. Happy Teachers' Day! Sorry sa ingay, love namin kayo!" maxlength="300"></textarea>
+    <button onclick="addMessage()">📌 Post Message</button>
+  </div>
+  <div id="messages" class="messages"></div>
+  <p class="disclaimer" id="wallHint"></p>
+</section>
+
+<footer>
+  <div class="foot-flowers">🌼 🌻 🌼 🌻 🌼</div>
+  <p><strong>Happy Teachers' Day! 🇵🇭</strong> Salamat, Ma'am / Sir — our teacher, our second parent, our Puno ng Saging.</p>
+  <p class="small">Made with 💛 in the Philippines • muted yellow theme • flowers + saging inside joke • 2026</p>
+</footer>
+
+<script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js"></script>
+<script src="firebase-config.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
